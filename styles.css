@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root{
+    --wallpapersecondary: #ffffff3f;
+    --bgcolour: #1a1a1a;
+    --fgcolour: #ffffff;
+    --paragraphcolour: #bdbdbd;
+    --headercolour: #e0e0e0;
+    --accentcolour: #fb7d10;
+    --accentcolour2: #744dff;
+    --sidebarbg: #1a1a1a;
+    --buttonprimarybg: #303135;
+    --buttonprimaryhoverbg: #ffffff;
+    --widgetprimarybg: #2d2f33;
+    --widgethoverbg: #454545;
+}
+
+body{
+    font-family: "Fira Code";
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.wallpaper{
+    background-color: var(--bgcolour);
+    color: var(--fgcolour);
+    background-image: radial-gradient(circle, var(--wallpapersecondary) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 30px 30px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+}
+
+.profile-picture{
+    position: absolute;
+    height: 170px;
+    top: 10%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+    border: var(--accentcolour2) 7px solid;
+    border-radius: 50%;
+}
+.profile-picture img{
+    width: 170px;
+    border-radius: 50%;
+}
+
+.profile-picture:hover{
+    border-color: var(--accentcolour);
+    top: 15%;
+    transition: all 0.5s ease;
+}
+.profile-picture:not(hover){
+    transition: all 0.5s ease;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+h1:hover{
+    color: var(--accentcolour);
+    font-size: 35px;
+    transition: all 0.3s ease;
+}
+h1:not(hover){
+    transition: all 0.3s ease;
+}
+
+h2:hover{
+    color: var(--accentcolour);
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+h2:not(hover){
+    transition: all 0.3s ease;
+}
+
+
+
+p:hover{
+    color: var(--accentcolour2);
+    transition: all 0.3s ease;
+}
+p:not(hover){
+    transition: all 0.3s ease;
+}
+
+
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--headercolour);
+    width: 600px;
+    margin-top: 150px;
+}
+
+
+.center h3 {
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 0px;
+}
+
+.center h2{
+    font-weight: 500;
+    position: relative;
+    margin-top: 0px;
+}
+
+.center h3:hover{
+    color: var(--accentcolour);
+    font-size: 45px;
+    transition: all 0.3s ease;
+}
+
+.center h3:not(hover){
+    transition: all 0.3s ease;
+}
+
+.center .underlined {
+    position: absolute;
+    width: 180px;
+    height: 15px;
+    bottom: 2px;
+    right: 305px;
+    z-index: -1;
+	transform:skew(-70deg);
+	background: var(--accentcolour2);
+}
+
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials a{
+    background-color: var(--bgcolour);
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    color: var(--headercolour);
+    margin-top: -25px;
+    transition: .3s ease; 
+}
+
+.socials a:hover{
+    background-color: var(--accentcolour);
+    color: var(--bgcolour);
+}
+
+.socials a i{
+    font-size: 20px;
+}
+
+
+
+.left-info{
+    width: 299px;
+}
+
+.left-info p{
+    width: 170px;
+    text-align: right;
+    margin-right: -120px;
+    margin-left: 60px;
+}
+
+.left-info .time-info1{
+    margin-top: 95px;
+}
+.left-info .time-info2{
+    margin-top: 147px;
+}
+.left-info .time-info3{
+    margin-top: 118px;
+}
+
+.right-info .time-info4{
+    margin-top: 115px;
+}
+.right-info .time-info5{
+    margin-top: 155px;
+}
+.right-info .time-info6{
+    margin-top: 130px;
+}
+
+.right-info {
+    width: 299px;
+}
+
+.right-info p{
+    font-size: 15px;
+    width: 190px;
+    text-align: left;
+    margin-left:-100px;
+}
+
+.timeline-date{
+    font-size: 17px;
+}
+
+.timeLineIndicator{
+    width: 2px;
+    height: 1300px;
+    background-color: var(--headercolour);
+    position: absolute;
+    display: flex;
+    margin-left: 110px;
+    justify-content: center;
+}
+
+.point{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--headercolour);
+    border-radius:50% ;
+}
+
+.point-1 { top: 0px; background: var(--accentcolour2) }
+.point-2 { top: 350px; }
+.point-3 { top: 620px; }
+.point-4 { top: 950px; }
+.point-5 { top: 1300px; background: var(--accentcolour2) }
+
+
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 60px;
+}
+
+.widget{
+    font-size: 14px;
+    background-color: var(--widgetprimarybg);
+    text-align: center;
+    border-radius: 10%;
+    border: var(--widgethoverbg) 2px solid;
+    width: 292px;
+    height: 260px;
+    position: relative;
+}
+
+
+
+.widget:hover{
+    background-color: var(--widgethoverbg);
+    border-color: var(--accentcolour);
+    transition: all 0.3s ease;
+}
+.widget:not(hover){
+    transition: all 0.3s ease;
+}
+
+.widget h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.widget p{
+    display: flex;
+    justify-content: center;
+}
+
+.widget a{
+    color: var(--accentcolour2);
+}
+.widget a:hover{
+    color: var(--accentcolour);
+}
+
+
+.tools-languages-title{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tool-language-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools{
+    color: var(--accentcolour);
+}
+
+.languages{
+    color: var(--accentcolour2);
+    margin-bottom: 100px;
+}
+
+
+.scroll-button button{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    background-color: var(--widgethoverbg);
+    font-size: 40px;
+    border: none;
+    border-radius: 30%;
+    z-index: 99;
+    cursor: pointer;
+    outline: none;
+}
+
+.scroll-button button:hover{
+    border: var(--accentcolour) 3px solid;
+    transition: all 0.2s ease;
+}
+
+.scroll-button button:not(hover){
+    transition: all 0.2s ease;
+}
+
+
+@keyframes fadeInAnimation {
+    0%{
+        opacity: 0.8;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
