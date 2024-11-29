@@ -25,6 +25,10 @@ body{
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    background-color: var(--bgcolour);
+    color: var(--fgcolour);
+    background-image: radial-gradient(circle, var(--wallpapersecondary) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 30px 30px;
 }
 
 .wallpaper{
@@ -69,7 +73,6 @@ a{
 
 h1:hover{
     color: var(--accentcolour);
-    font-size: 35px;
     transition: all 0.3s ease;
 }
 h1:not(hover){
@@ -78,7 +81,6 @@ h1:not(hover){
 
 h2:hover{
     color: var(--accentcolour);
-    font-size: 28px;
     transition: all 0.3s ease;
 }
 h2:not(hover){
@@ -130,7 +132,6 @@ p:not(hover){
 
 .center h3:hover{
     color: var(--accentcolour);
-    font-size: 45px;
     transition: all 0.3s ease;
 }
 
@@ -226,6 +227,10 @@ p:not(hover){
     font-size: 17px;
 }
 
+.timeline i{
+    color: var(--accentcolour);
+}
+
 .timeLineIndicator{
     width: 2px;
     height: 1300px;
@@ -299,6 +304,12 @@ p:not(hover){
     color: var(--accentcolour);
 }
 
+.widget .languages-involved{
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--accentcolour);
+}
+
 
 .tools-languages-title{
     margin-top: 70px;
@@ -311,6 +322,7 @@ p:not(hover){
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
 }
 
 .tools{
@@ -366,14 +378,14 @@ p:not(hover){
     }
 
     .profile-picture {
-        height: 150px;
-        top: 15%;
-        left: 50%;
+        height: 120px;
+        top: 10%;
+        left: 88%;
         transform: translateX(-50%);
     }
 
     .profile-picture img {
-        width: 150px;
+        width: 120px;
     }
 
     .center h3 {
@@ -384,10 +396,18 @@ p:not(hover){
         font-size: 25px;
     }
 
+    .right-info{
+        margin-left: 100px;
+    }
+
+    .timeLineIndicator{
+        margin-left: 230px;
+    }
+
     .widget {
-        width: 45%;
-        margin: 10px;
-        height: 220px;
+        width: 30%;
+        gap: 5px;
+        width: 220px;
     }
 
     .socials a {
@@ -399,23 +419,30 @@ p:not(hover){
     /* Mobile Layout */
     body {
         font-size: 14px;
-        padding: 10px;
     }
 
     .center {
-        width: 100%;
+        width: 70%;
         margin-top: 50px;
     }
 
+    .center .aboutme {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+
     .profile-picture {
-        height: 70px;
-        top: 10%;
-        left: 80%;
+        height: 50px;
+        top: 12%;
+        left: 85%;
         transform: translateX(-50%);
     }
 
     .profile-picture img {
-        width: 70px;
+        width: 50px;
     }
 
     .center h3 {
@@ -441,7 +468,11 @@ p:not(hover){
         margin-right: 100px;
     }
     .timeLineIndicator{
-        margin-left: 200px;
+        margin-left: 220px;
+    }
+    
+    .tool-language-list{
+        font-size: 14px;
     }
 
 }
