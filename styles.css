@@ -216,6 +216,14 @@ p:not(hover){
     width: 299px;
 }
 
+.right-info i{
+    font-size: 25px;
+}
+
+.right-info span{
+    color: var(--accentcolour);
+}
+
 .right-info p{
     font-size: 15px;
     width: 190px;
@@ -233,7 +241,7 @@ p:not(hover){
 
 .timeLineIndicator{
     width: 2px;
-    height: 1300px;
+    height: 1450px;
     background-color: var(--headercolour);
     position: absolute;
     display: flex;
@@ -253,7 +261,7 @@ p:not(hover){
 .point-2 { top: 350px; }
 .point-3 { top: 620px; }
 .point-4 { top: 950px; }
-.point-5 { top: 1300px; background: var(--accentcolour2) }
+.point-5 { top: 1450px; background: var(--accentcolour2) }
 
 
 
@@ -320,7 +328,7 @@ p:not(hover){
 
 .tool-language-list{
     display: flex;
-    align-items: center;
+    color: var(--accentcolour);
     justify-content: center;
     font-size: 18px;
 }
@@ -413,6 +421,21 @@ p:not(hover){
     .socials a {
         padding: 8px 15px;
     }
+
+    .scroll-button button{
+        position: fixed;
+        top: 90%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        background-color: var(--widgethoverbg);
+        background-color: transparent;
+        font-size: 30px;
+        border: none;
+        border-radius: 30%;
+        z-index: 99;
+        cursor: pointer;
+        outline: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -437,7 +460,7 @@ p:not(hover){
     .profile-picture {
         height: 50px;
         top: 12%;
-        left: 85%;
+        left: 90%;
         transform: translateX(-50%);
     }
 
@@ -459,9 +482,9 @@ p:not(hover){
     }
 
     .widget {
-        width: 100%;
-        height: 200px;
+        width: 400px;
     }
+
 
     .right-info{
         margin-left: 100px;
@@ -472,7 +495,26 @@ p:not(hover){
     }
     
     .tool-language-list{
-        font-size: 14px;
+        font-size: 12px;
+    }
+    
+    .language-tool-seperator{
+        display: none;
+    }
+
+    .scroll-button button{
+        position: fixed;
+        top: 90%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        background-color: var(--widgethoverbg);
+        background-color: transparent;
+        font-size: 20px;
+        border: none;
+        border-radius: 30%;
+        z-index: 99;
+        cursor: pointer;
+        outline: none;
     }
 
 }
