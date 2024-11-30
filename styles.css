@@ -115,6 +115,7 @@ p:not(hover){
 
 .center .name-title:hover .underlined{
     left: 200px;
+    background: linear-gradient(#744dff, #fb7d10);
 }
 
 .center h3 {
@@ -146,7 +147,7 @@ p:not(hover){
     bottom: 2px;
     z-index: -1;
 	transform:skew(-70deg);
-	background: var(--accentcolour2);
+    background: linear-gradient(#fb7d10, #744dff);
     transition: all 1s ease;
 }
 
@@ -171,7 +172,7 @@ p:not(hover){
 }
 
 .socials a:hover{
-    background-color: var(--accentcolour);
+    background: linear-gradient(#744dff, #fb7d10);
     color: var(--bgcolour);
 }
 
@@ -242,7 +243,8 @@ p:not(hover){
 .timeLineIndicator{
     width: 2px;
     height: 1450px;
-    background-color: var(--headercolour);
+    background: -webkit-linear-gradient(--accentcolour2,--headercolour);
+    background: linear-gradient(#744dff, #fb7d10);
     position: absolute;
     display: flex;
     margin-left: 110px;
@@ -261,7 +263,7 @@ p:not(hover){
 .point-2 { top: 350px; }
 .point-3 { top: 620px; }
 .point-4 { top: 950px; }
-.point-5 { top: 1450px; background: var(--accentcolour2) }
+.point-5 { top: 1450px; background: var(--accentcolour) }
 
 
 
@@ -273,8 +275,8 @@ p:not(hover){
 }
 
 .widget {
+    background: linear-gradient(#744dff, #fb7d10);
     font-size: 14px;
-    background-color: var(--widgetprimarybg);
     text-align: center;
     border-radius: 10%;
     border: var(--widgethoverbg) 2px solid;
@@ -287,14 +289,22 @@ p:not(hover){
 }
 
 .widget:hover {
-    background-color: var(--widgethoverbg);
+    background: linear-gradient(#fb7d10, #744dff);
     border-color: var(--accentcolour);
     transition: all 0.3s ease;
+}
+
+.widget:hover .languages-involved i{
+    color: var(--accentcolour);
 }
 
 .widget h2 {
     margin-top: 10px;
     flex-shrink: 0;
+}
+
+.widget h2:hover{
+    color: var(--headercolour);
 }
 
 .widget p {
@@ -305,10 +315,15 @@ p:not(hover){
     margin: 0;
 }
 
-.widget .languages-involved {
+.widget p:hover{
+    color: var(--headercolour);
+}
+
+
+.widget .languages-involved i {
     margin-top: 10px;
-    font-size: 20px;
-    color: var(--accentcolour);
+    font-size: 25px;
+    color: var(--accentcolour2);
     flex-shrink: 0;
 }
 
