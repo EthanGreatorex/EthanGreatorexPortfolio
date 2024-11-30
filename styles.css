@@ -272,7 +272,7 @@ p:not(hover){
     margin-bottom: 60px;
 }
 
-.widget{
+.widget {
     font-size: 14px;
     background-color: var(--widgetprimarybg);
     text-align: center;
@@ -281,42 +281,37 @@ p:not(hover){
     width: 292px;
     height: 260px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-
-
-.widget:hover{
+.widget:hover {
     background-color: var(--widgethoverbg);
     border-color: var(--accentcolour);
     transition: all 0.3s ease;
 }
-.widget:not(hover){
-    transition: all 0.3s ease;
-}
 
-.widget h2{
-    display: flex;
-    justify-content: center;
+.widget h2 {
     margin-top: 10px;
+    flex-shrink: 0;
 }
 
-.widget p{
+.widget p {
+    flex-grow: 1; 
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
-.widget a{
-    color: var(--accentcolour2);
-}
-.widget a:hover{
-    color: var(--accentcolour);
-}
-
-.widget .languages-involved{
+.widget .languages-involved {
     margin-top: 10px;
     font-size: 20px;
     color: var(--accentcolour);
+    flex-shrink: 0;
 }
+
 
 
 .tools-languages-title{
@@ -495,7 +490,7 @@ p:not(hover){
     }
     
     .tool-language-list{
-        font-size: 12px;
+        font-size: 17px;
     }
     
     .language-tool-seperator{
