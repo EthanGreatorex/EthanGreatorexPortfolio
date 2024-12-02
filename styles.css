@@ -294,6 +294,10 @@ p:not(hover){
     transition: all 0.3s ease;
 }
 
+.widget:hover a{
+    color: var(--accentcolour);
+}
+
 .widget:hover .languages-involved i{
     color: var(--accentcolour);
 }
