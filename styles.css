@@ -8,7 +8,7 @@
     --paragraphcolour: #bdbdbd;
     --headercolour: #e0e0e0;
     --accentcolour: #fb7d10;
-    --accentcolour2: #744dff;
+    --accentcolour2: #744dff;   
     --sidebarbg: #1a1a1a;
     --buttonprimarybg: #303135;
     --buttonprimaryhoverbg: #ffffff;
@@ -96,8 +96,6 @@ p:hover{
 p:not(hover){
     transition: all 0.3s ease;
 }
-
-
 
 
 .center{
