@@ -44,6 +44,7 @@ body{
 }
 
 .profile-picture{
+    z-index: 999;
     position: fixed;
     height: 170px;
     top: 12%;
