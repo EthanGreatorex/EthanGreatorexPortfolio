@@ -44,21 +44,22 @@ body{
 }
 
 .profile-picture{
-    position: absolute;
+    position: fixed;
     height: 170px;
-    top: 10%;
+    top: 12%;
     left: 85%;
     transform: translate(-50%,-50%);
-    border: var(--accentcolour2) 7px solid;
+    border: var(--accentcolour) 7px solid;
     border-radius: 50%;
 }
 .profile-picture img{
     width: 170px;
+    height: 170px;
     border-radius: 50%;
 }
 
 .profile-picture:hover{
-    border-color: var(--accentcolour);
+    border-color: var(--accentcolour2);
     top: 15%;
     transition: all 0.5s ease;
 }
@@ -406,6 +407,7 @@ p:not(hover){
 
     .profile-picture img {
         width: 120px;
+        height: 120px;
     }
 
     .center h3 {
@@ -478,6 +480,7 @@ p:not(hover){
 
     .profile-picture img {
         width: 50px;
+        height: 50px;
     }
 
     .center h3 {
