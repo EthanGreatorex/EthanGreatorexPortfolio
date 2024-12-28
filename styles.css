@@ -392,6 +392,66 @@ p:not(hover){
 }
 
 
+@media (max-width: 1050px) {
+    /* Tablet Layout */
+    .center {
+        width: 90%;
+        margin-top: 80px;
+    }
+
+    .profile-picture {
+        height: 120px;
+        top: 10%;
+        left: 88%;
+        transform: translateX(-50%);
+    }
+
+    .profile-picture img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .center h3 {
+        font-size: 35px;
+    }
+
+    .center h2 {
+        font-size: 25px;
+    }
+
+    .right-info{
+        margin-left: 100px;
+    }
+
+    .timeLineIndicator{
+        margin-left: 230px;
+    }
+
+    .widget {
+        width: 30%;
+        gap: 5px;
+        width: 220px;
+    }
+
+    .socials a {
+        padding: 8px 15px;
+    }
+
+    .scroll-button button{
+        position: fixed;
+        top: 90%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        background-color: var(--widgethoverbg);
+        background-color: transparent;
+        font-size: 30px;
+        border: none;
+        border-radius: 30%;
+        z-index: 99;
+        cursor: pointer;
+        outline: none;
+    }
+}
 @media (max-width: 1024px) {
     /* Tablet Layout */
     .center {
