@@ -7,8 +7,8 @@
     --fgcolour: #ffffff;
     --paragraphcolour: #ffffff;
     --headercolour: #ffffff;
-    --accentcolour: rgb(16, 163, 217);
-    --accentcolour2: rgb(112, 3, 255);   
+    --accentcolour: rgb(157, 17, 233);
+    --accentcolour2: rgb(158, 3, 255);   
     --sidebarbg: #1a1a1a;
     --buttonprimarybg: #303135;
     --buttonprimaryhoverbg: #ffffff;
@@ -47,8 +47,8 @@ body{
 
     background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
         var(--angle),
-        #1392fa,
-        #4800ff
+        rgba(118,0,255,1),
+        rgba(46,19,103,1)
       ) border-box;
 
     animation: 3s rotate linear infinite;
@@ -59,14 +59,7 @@ body{
     border-radius: 50%;
 }
 
-.profile-picture:hover{
-    border-color: var(--accentcolour2);
-    top: 15%;
-    transition: all 0.5s ease;
-}
-.profile-picture:not(hover){
-    transition: all 0.5s ease;
-}
+
 
 a{
     text-decoration: none;
@@ -188,16 +181,6 @@ p:not(hover) span{
     transition: all 0.3s ease;
 }
 
-.center .underlined {
-    position: absolute;
-    width: 180px;
-    height: 15px;
-    bottom: 2px;
-    z-index: -1;
-	transform:skew(-70deg);
-    background: linear-gradient(#fb7d10, #744dff);
-    transition: all 1s ease;
-}
 
 
 .socials{
@@ -209,8 +192,8 @@ p:not(hover) span{
 }
 
 .socials a{
-    background: rgb(15,120,158);
-    background: linear-gradient(90deg, rgba(15,120,158,1) 14%, rgba(11,120,121,1) 100%, rgba(0,2,3,1) 100%);
+    background: rgb(118,0,255);
+    background: linear-gradient(90deg, rgba(118,0,255,1) 4%, rgba(46,19,103,1) 100%);
     padding: 10px 20px 10px 20px;
     border-radius: 100px;
     /* display: flex; */
@@ -223,7 +206,6 @@ p:not(hover) span{
 }
 
 .socials a:hover{
-    background: rgb(15,120,158);
     -webkit-box-shadow:0px 0px 145px 32px rgba(89,0,255,0.74);
     -moz-box-shadow: 0px 0px 145px 32px rgba(89,0,255,0.74);
     box-shadow: 0px 0px 145px 32px rgba(89,0,255,0.74);
@@ -355,8 +337,8 @@ p:not(hover) span{
 
     background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
         var(--angle),
-        #1392fa,
-        #4800ff
+        rgba(118,0,255,1),
+        rgba(46,19,103,1)
       ) border-box;
 
     animation: 3s rotate linear infinite;
