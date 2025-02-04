@@ -7,8 +7,8 @@
     --fgcolour: #ffffff;
     --paragraphcolour: #ffffff;
     --headercolour: #ffffff;
-    --accentcolour: rgb(157, 17, 233);
-    --accentcolour2: rgb(158, 3, 255);   
+    --accentcolour: #ae6cff;
+    --accentcolour2: rgb(108, 3, 255);   
     --sidebarbg: #1a1a1a;
     --buttonprimarybg: #303135;
     --buttonprimaryhoverbg: #ffffff;
@@ -26,11 +26,18 @@ body{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     color: var(--fgcolour);
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,3,54,1) 55%, rgba(11,3,25,1) 100%);
-    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,3,54,1) 55%, rgba(11,3,25,1) 100%); */
 }
 
+.video-background{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -999;
+}
 
 .profile-picture{
     -webkit-box-shadow:0px 0px 105px 36px rgba(89,0,255,0.9);
@@ -53,6 +60,7 @@ body{
 
     animation: 3s rotate linear infinite;
 }
+
 .profile-picture img{
     width: 200px;
     height: 200px;
@@ -68,6 +76,7 @@ a{
 
 h1:hover{
     color: var(--accentcolour);
+
     transition: all 0.3s ease;
 }
 h1:not(hover){
@@ -81,7 +90,6 @@ h2:hover{
 h2:not(hover){
     transition: all 0.3s ease;
 }
-
 
 
 
@@ -324,7 +332,6 @@ p:not(hover) span{
     font-size: 14px;
     text-align: center;
     border-radius: 10%;
-    border: none;
     width: 320px;
     height: 300px;
     position: relative;
@@ -332,7 +339,7 @@ p:not(hover) span{
     flex-direction: column;
     justify-content: space-between;
     
-    border: 3px solid #0000;
+    border: 4px solid #0000;
     border-radius: 12px;
 
     background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
@@ -449,7 +456,6 @@ p:not(hover) span{
     cursor: pointer;
     outline: none;
 }
-
 
 
 
