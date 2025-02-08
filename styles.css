@@ -16,6 +16,10 @@
     --widgethoverbg: #454545;
 }
 
+::-webkit-scrollbar{
+    background-color: transparent;
+}
+
 body{
     font-family: "Fira Code";
     margin: 0;
@@ -28,6 +32,15 @@ body{
     color: var(--fgcolour);
     background-color: rgb(0, 0, 0);
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,3,54,1) 55%, rgba(11,3,25,1) 100%); */
+}
+
+canvas{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    width: 100px;
 }
 
 .video-background{
@@ -471,6 +484,15 @@ p:not(hover) span{
 
 
 @media (max-width: 1300px) {
+
+    canvas{
+        position: absolute;
+        top: 63%;
+        left: 87%;
+        transform: translate(-50%,-50%);
+        z-index: 999;
+        width: 100px;
+    }
     /* Tablet Layout */
     .center {
         width: 90%;
