@@ -540,7 +540,7 @@ p:not(hover) span{
     .scroll-button button{
         position: fixed;
         top: 90%;
-        left: 90%;
+        left: 80%;
         transform: translate(-50%,-50%);
         background-color: var(--widgethoverbg);
         background-color: transparent;
@@ -553,6 +553,15 @@ p:not(hover) span{
     }
 }
 @media (max-width: 1200px) {
+
+    canvas{
+        position: absolute;
+        top: 75%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+        z-index: 999;
+        width: 100px;
+    }
     /* Tablet Layout */
     .center {
         width: 90%;
@@ -615,6 +624,15 @@ p:not(hover) span{
 
 
 @media (max-width: 770px) {
+
+    canvas{
+        position: absolute;
+        top: 80%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+        z-index: 999;
+        width: 100px;
+    }
     /* Mobile Layout */
     body {
         font-size: 14px;
