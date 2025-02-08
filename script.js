@@ -17,7 +17,7 @@ camera.position.z = 5;
 // Load a 3D model
 const loader = new GLTFLoader();
 loader.load(
-  '/models/earth/scene.gltf',
+  './models/earth/scene.gltf',
   (gltf) => {
     const model = gltf.scene;
 
