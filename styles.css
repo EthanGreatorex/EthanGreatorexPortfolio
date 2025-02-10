@@ -332,8 +332,10 @@ p:not(hover) span{
 
 
 .project-list{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
     gap: 150px;
     margin-bottom: 20px;
 }
@@ -568,6 +570,7 @@ p:not(hover) span{
         margin-top: 80px;
     }
 
+
     .profile-picture {
         height: 120px;
         top: 10%;
@@ -636,6 +639,9 @@ p:not(hover) span{
     /* Mobile Layout */
     body {
         font-size: 14px;
+    }
+    .project-list{
+        grid-template-columns: 1fr;
     }
 
     .center {
