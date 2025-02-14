@@ -56,7 +56,7 @@ canvas{
     -webkit-box-shadow:0px 0px 105px 36px rgba(89,0,255,0.9);
     -moz-box-shadow: 0px 0px 105px 36px rgba(89,0,255,0.9);
     box-shadow: 0px 0px 105px 36px rgba(89,0,255,0.9);
-    z-index: 999;
+    z-index: 99999;
     position: fixed;
     height: 200px;
     top: 15%;
@@ -206,6 +206,7 @@ p:not(hover) span{
 
 .socials{
     display: flex;
+    z-index: 999999;
     align-items: center;
     gap: 10px;
     min-width: 120px;
@@ -366,7 +367,48 @@ p:not(hover) span{
     animation: 3s rotate linear infinite;
 }
 
+.email-me{
+    margin-top: 60px;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+}
 
+
+
+.email-me input{
+    width: 300px;
+    height: 30px;
+    border: 4px solid #0000;
+    border-radius: 12px;
+    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
+        var(--angle),
+        rgba(118,0,255,1),
+        rgba(46,19,103,1)
+      ) border-box;
+
+    animation: 3s rotate linear infinite;
+    color: white;
+    font-size: 15px;
+}
+
+
+.email-me input:focus{
+    outline: none;
+}
+
+.email-me .submit-email{
+    width: 315px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 70px;
+    font-size: 16px;
+}
 @keyframes rotate {
     to {
       --angle: 360deg;
