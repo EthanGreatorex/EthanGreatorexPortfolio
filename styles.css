@@ -345,7 +345,7 @@ p:not(hover) span{
     box-shadow: 0px 0px 145px 32px rgba(89,0,255,0.74);
     background: none;
     width: 2px;
-    height: 1450px;
+    height: 1700px;
     background: -webkit-linear-gradient(--accentcolour2,--headercolour);
     background: linear-gradient(var(--accentcolour), var(--accentcolour2));
     position: absolute;
@@ -363,10 +363,11 @@ p:not(hover) span{
 }
 
 .point-1 { top: 0px; background: var(--accentcolour) }
-.point-2 { top: 350px; }
-.point-3 { top: 620px; }
-.point-4 { top: 950px; }
-.point-5 { top: 1450px; background: var(--accentcolour2) }
+.point-2 { top: 430px; }
+.point-3 { top: 770px; }
+.point-4 { top: 1160px; }
+.point-5 { top: 1700px; background: var(--accentcolour2) }
+
 
 
 
