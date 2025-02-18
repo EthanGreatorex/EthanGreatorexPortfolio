@@ -16,9 +16,32 @@
     --widgethoverbg: #454545;
 }
 
-::-webkit-scrollbar{
-    background-color: transparent;
+html{
+    overflow: scoll;
+    overflow-x: hidden;
 }
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
+        var(--angle),
+        rgba(118,0,255,1),
+        rgba(46,19,103,1)
+      ) border-box;
+
+    animation: 3s rotate linear infinite;
+}
+
+::-webkit-scrollbar{
+    display: none;
+    width: 0;
+    background-color: transparent;
+
+}
+
+
 
 body{
     font-family: "Fira Code";
@@ -34,22 +57,25 @@ body{
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,3,54,1) 55%, rgba(11,3,25,1) 100%); */
 }
 
-canvas{
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%,-50%);
-    z-index: 999;
-    width: 100px;
-}
+
 
 .video-background{
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-height: 100%;
-    min-width: 100%;
+    align-items: center;
+    justify-content: center;
     z-index: -999;
+    height: 100vh;
+    width: 99vw;
+
+    border: 5px solid #0000;
+
+    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
+        var(--angle),
+        rgba(118,0,255,1),
+        rgba(46,19,103,1)
+      ) border-box;
+
+    animation: 3s rotate linear infinite;
 }
 
 .profile-picture{
@@ -57,10 +83,10 @@ canvas{
     -moz-box-shadow: 0px 0px 105px 36px rgba(89,0,255,0.9);
     box-shadow: 0px 0px 105px 36px rgba(89,0,255,0.9);
     z-index: 99999;
-    position: fixed;
-    height: 200px;
-    top: 15%;
-    left: 85%;
+    position: absolute;
+    height: 400px;
+    top: 35%;
+    left: 70%;
     transform: translate(-50%,-50%);
     border: 3px solid #0000;
     border-radius: 50%;
@@ -75,8 +101,8 @@ canvas{
 }
 
 .profile-picture img{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -86,6 +112,10 @@ a{
     text-decoration: none;
 }
 
+
+span{
+    color: var(--accentcolour);
+}
 
 h1:hover{
     color: var(--accentcolour);
@@ -102,6 +132,10 @@ h2:hover{
 }
 h2:not(hover){
     transition: all 0.3s ease;
+}
+
+p{
+    font-size: 17px;
 }
 
 
@@ -137,6 +171,7 @@ p:not(hover) span{
 
 .name-title span{
     display: inline-block;
+    font-size: 4rem;
     animation: wave 2.7s ease-in-out infinite
 }
 
@@ -211,6 +246,7 @@ p:not(hover) span{
     gap: 10px;
     min-width: 120px;
     text-align: center;
+    
 }
 
 .socials a{
@@ -226,6 +262,8 @@ p:not(hover) span{
     margin-top: -25px;
     transition: .3s ease; 
 }
+
+
 
 .socials a:hover{
     -webkit-box-shadow:0px 0px 145px 32px rgba(89,0,255,0.74);
@@ -287,7 +325,7 @@ p:not(hover) span{
 }
 
 .right-info p{
-    font-size: 15px;
+    font-size: 17px;
     width: 190px;
     text-align: left;
     margin-left:-100px;
@@ -367,20 +405,24 @@ p:not(hover) span{
     animation: 3s rotate linear infinite;
 }
 
-.email-me{
-    margin-top: 60px;
-    display: grid;
-    justify-content: center;
-    align-self: center;
+.widget a{
+    font-size: 16px;
 }
 
+.tools{
+    gap: 5px;
+}
 
-
-.email-me input{
-    width: 300px;
-    height: 30px;
-    border: 4px solid #0000;
+.tools i{
+    margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    gap: 5px;
+    border: 2px solid #0000;
     border-radius: 12px;
+
     background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
         var(--angle),
         rgba(118,0,255,1),
@@ -388,27 +430,9 @@ p:not(hover) span{
       ) border-box;
 
     animation: 3s rotate linear infinite;
-    color: white;
-    font-size: 15px;
 }
 
 
-.email-me input:focus{
-    outline: none;
-}
-
-.email-me .submit-email{
-    width: 315px;
-}
-
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 70px;
-    font-size: 16px;
-}
 @keyframes rotate {
     to {
       --angle: 360deg;
@@ -454,17 +478,6 @@ p:not(hover) span{
     color: var(--headercolour);
 }
 
-/* .widget p {
-    flex-grow: 1; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-} */
-
-/* .widget p:hover{
-    color: var(--headercolour);
-} */
 
 
 .widget .languages-involved i {
@@ -529,30 +542,24 @@ p:not(hover) span{
 
 @media (max-width: 1300px) {
 
-    canvas{
-        position: absolute;
-        top: 63%;
-        left: 87%;
-        transform: translate(-50%,-50%);
-        z-index: 999;
-        width: 100px;
-    }
+
     /* Tablet Layout */
     .center {
-        width: 90%;
+        width: 80%;
         margin-top: 80px;
     }
 
     .profile-picture {
-        height: 120px;
+        z-index: -1;
+        height: 240px;
         top: 10%;
-        left: 86%;
+        left: 75%;
         transform: translateX(-50%);
     }
 
     .profile-picture img {
-        width: 120px;
-        height: 120px;
+        width: 240px;
+        height: 240px;
     }
 
     .center h3 {
@@ -564,201 +571,229 @@ p:not(hover) span{
     }
 
     .right-info{
-        margin-left: 100px;
+        margin-left: 120px;
     }
 
     .timeLineIndicator{
         margin-left: 230px;
     }
 
-    .widget {
-        width: 30%;
-        gap: 5px;
-        width: 220px;
-    }
-
-    .socials a {
-        padding: 8px 15px;
-    }
-
-    .scroll-button button{
-        position: fixed;
-        top: 90%;
-        left: 80%;
-        transform: translate(-50%,-50%);
-        background-color: var(--widgethoverbg);
-        background-color: transparent;
-        font-size: 30px;
-        border: none;
-        border-radius: 30%;
-        z-index: 99;
-        cursor: pointer;
-        outline: none;
-    }
-}
-@media (max-width: 1200px) {
-
-    canvas{
-        position: absolute;
-        top: 75%;
-        left: 80%;
-        transform: translate(-50%,-50%);
-        z-index: 999;
-        width: 100px;
-    }
-    /* Tablet Layout */
-    .center {
-        width: 90%;
-        margin-top: 80px;
-    }
-
-
-    .profile-picture {
-        height: 120px;
-        top: 10%;
-        left: 86%;
-        transform: translateX(-50%);
-    }
-
-    .profile-picture img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .center h3 {
-        font-size: 35px;
-    }
-
-    .center h2 {
-        font-size: 25px;
-    }
-
-    .right-info{
-        margin-left: 100px;
-    }
-
-    .timeLineIndicator{
-        margin-left: 230px;
-    }
-
-    .widget {
-        width: 30%;
-        gap: 5px;
-        width: 270px;
-    }
-
-    .socials a {
-        padding: 8px 15px;
-    }
-
-    .scroll-button button{
-        position: fixed;
-        top: 90%;
-        left: 90%;
-        transform: translate(-50%,-50%);
-        background-color: var(--widgethoverbg);
-        background-color: transparent;
-        font-size: 30px;
-        border: none;
-        border-radius: 30%;
-        z-index: 99;
-        cursor: pointer;
-        outline: none;
-    }
-}
-
-
-@media (max-width: 770px) {
-
-    canvas{
-        position: absolute;
-        top: 80%;
-        left: 80%;
-        transform: translate(-50%,-50%);
-        z-index: 999;
-        width: 100px;
-    }
-    /* Mobile Layout */
-    body {
-        font-size: 14px;
-    }
     .project-list{
-        grid-template-columns: 1fr;
-    }
-
-    .center {
-        width: 70%;
-        margin-top: 50px;
-    }
-
-    .center .aboutme {
         width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
-    
 
-    .profile-picture {
-        height: 50px;
-        top: 12%;
-        left: 83%;
-        border-width: 3px;
-        transform: translateX(-50%);
-    }
-
-    .profile-picture img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .center h3 {
-        font-size: 30px;
-    }
-
-    .center h2 {
-        font-size: 22px;
-    }
-
-    .socials a {
-        padding: 6px 12px;
-        font-size: 14px;
     }
 
     .widget {
         width: 300px;
+        align-items: center;
+        justify-content: center;
+        height: 290px;
+        gap: 5px;
+
+    }
+
+
+    .socials a {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 900px){
+    
+    .project-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .timeLineIndicator{
+        margin-left: 230px;
+        height: 1680px;
+    }
+
+    .point-1 { top: 0px; background: var(--accentcolour) }
+    .point-2 { top: 430px; }
+    .point-3 { top: 770px; }
+    .point-4 { top: 1160px; }
+    .point-5 { top: 1680px; background: var(--accentcolour2) }
+
+}
+
+@media (max-width: 700px) {
+
+
+    /* Tablet Layout */
+    .center {
+        width: 60%;
+        margin-top: 300px;
+        margin-right: 40px;
+    }
+
+    .center .aboutme{
+        width: 320px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .current-position{
+        width: 400px;
+        margin-bottom: 30px;
+    }
+    .profile-picture {
+        z-index: 1; 
+        height: 200px;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .profile-picture img {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1{
+        margin-top: 0;
+    }
+    
+    .name-title{
+        z-index: 999;
+        margin-bottom: 50px;
+    }
+    .center h3 span{
+        font-size: 37px;
+        z-index: 999;
+    }
+
+    .center h3 {
+        font-size: 25px;
+    }
+
+    .center h2 {
+        font-size: 20px;
     }
 
 
     .right-info{
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 120px;
     }
+
     .timeLineIndicator{
-        margin-left: 220px;
-    }
-    
-    .tool-language-list{
-        font-size: 17px;
-    }
-    
-    .language-tool-seperator{
-        display: none;
+        margin-left: 230px;
+        height: 1730px;
     }
 
-    .scroll-button button{
-        position: fixed;
-        top: 90%;
-        left: 90%;
-        transform: translate(-50%,-50%);
-        background-color: var(--widgethoverbg);
-        background-color: transparent;
+    .point-1 { top: 0px; background: var(--accentcolour) }
+    .point-2 { top: 430px; }
+    .point-3 { top: 770px; }
+    .point-4 { top: 1160px; }
+    .point-5 { top: 1730px; background: var(--accentcolour2) }
+
+    .project-list{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .widget {
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        height: 270px;
+        gap: 5px;
+
+    }
+
+    .socials a {
+        padding: 8px 15px;
+    }
+
+
+@media (max-width: 500px) {
+
+
+    /* Tablet Layout */
+    .center {
+        width: 60%;
+        margin-top: 300px;
+        margin-right: 40px;
+    }
+
+    .center .aboutme{
+        width: 320px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .profile-picture {
+        z-index: 1; 
+        height: 200px;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .profile-picture img {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1{
+        margin-top: 0;
+    }
+    
+    .name-title{
+        z-index: 999;
+        margin-bottom: 50px;
+    }
+    .center h3 span{
+        font-size: 37px;
+        z-index: 999;
+    }
+
+    .center h3 {
+        font-size: 25px;
+    }
+
+    .center h2 {
         font-size: 20px;
-        border: none;
-        border-radius: 30%;
-        z-index: 99;
-        cursor: pointer;
-        outline: none;
     }
 
+
+    .right-info{
+        margin-left: 120px;
+    }
+
+    .timeLineIndicator{
+        margin-left: 230px;
+        height: 1730px;
+    }
+
+    .point-1 { top: 0px; background: var(--accentcolour) }
+    .point-2 { top: 430px; }
+    .point-3 { top: 770px; }
+    .point-4 { top: 1160px; }
+    .point-5 { top: 1730px; background: var(--accentcolour2) }
+
+    .project-list{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .widget {
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        height: 270px;
+        gap: 5px;
+
+    }
+
+    .socials a {
+        padding: 8px 15px;
+    }
+
+    .tools-languages-title{
+        width: 300px;
+        font-size: 28px;
+    }
+}
 }
