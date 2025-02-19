@@ -25,13 +25,6 @@ body{
     overflow: hidden;
     overflow-y: scroll;
     scrollbar-width: none;
-    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
-        var(--angle),
-        rgba(118,0,255,1),
-        rgba(46,19,103,1)
-      ) border-box;
-
-    animation: 3s rotate linear infinite;
 }
 
 ::-webkit-scrollbar{
@@ -65,17 +58,8 @@ body{
     justify-content: center;
     z-index: -999;
     height: 100vh;
-    width: 99vw;
+    width: 100vw;
 
-    border: 5px solid #0000;
-
-    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
-        var(--angle),
-        rgba(118,0,255,1),
-        rgba(46,19,103,1)
-      ) border-box;
-
-    animation: 3s rotate linear infinite;
 }
 
 .profile-picture{
