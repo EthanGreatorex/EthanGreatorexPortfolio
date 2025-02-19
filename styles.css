@@ -47,9 +47,13 @@ body{
     animation-fill-mode: forwards;
     color: var(--fgcolour);
     background-color: rgb(0, 0, 0);
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,3,54,1) 55%, rgba(11,3,25,1) 100%); */
+
 }
 
+
+h1{
+    color: var(--accentcolour);
+}
 
 
 .video-background{
@@ -417,6 +421,113 @@ p:not(hover) span{
     animation: 3s rotate linear infinite;
 }
 
+.email-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 1000px;
+    margin-top: 150px;
+}
+
+.email-form form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.col{
+    margin-bottom: 12px;
+}
+
+.email-form  input{
+    font-size: 17px;
+    height: 3vh;
+    color: white;
+    border: 2px solid #0000;
+    border-radius: 8px;
+
+    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
+        var(--angle),
+        rgba(118,0,255,1),
+        rgba(46,19,103,1)
+      ) border-box;
+
+    animation: 3s rotate linear infinite;
+}
+
+.email-form  input::placeholder{
+    color: white;
+}
+
+.email-form  input:active{
+    color: white;
+    border: 2px solid #0000;
+    border-radius: 8px;
+
+    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
+        var(--angle),
+        rgba(118,0,255,1),
+        rgba(46,19,103,1)
+      ) border-box;
+
+    animation: 3s rotate linear infinite;
+}
+
+.email-form  button{
+    height: 4vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: white;
+    border: 2px solid #0000;
+    border-radius: 8px;
+
+    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
+        var(--angle),
+        rgba(118,0,255,1),
+        rgba(46,19,103,1)
+      ) border-box;
+
+    animation: 3s rotate linear infinite;
+}
+
+.email-form  textarea{
+    font-size: 17px;
+    width: 25vw;
+    color: white;
+    border: 2px solid #0000;
+    border-radius: 8px;
+
+    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
+        var(--angle),
+        rgba(118,0,255,1),
+        rgba(46,19,103,1)
+      ) border-box;
+
+    animation: 3s rotate linear infinite;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+
+}
+
+.input-row .col {
+    flex: 1; 
+}
+
+
+
 
 @keyframes rotate {
     to {
@@ -581,6 +692,36 @@ p:not(hover) span{
     .socials a {
         padding: 8px 15px;
     }
+
+    .email-form textarea{
+        width: 36vw;
+    }
+}
+
+@media (max-width : 1200px){
+    .form-group input{
+        width: 199px;
+    }
+    .email-form{
+        width: 1000px;
+    }
+
+    .email-form textarea{
+        width: 46w;
+    }
+}
+
+@media (max-width : 1050px){
+    .form-group input{
+        width: 199px;
+    }
+    .email-form{
+        width: 800px;
+    }
+
+    .email-form textarea{
+        width: 46w;
+    }
 }
 
 @media (max-width: 900px){
@@ -600,9 +741,16 @@ p:not(hover) span{
     .point-4 { top: 1160px; }
     .point-5 { top: 1680px; background: var(--accentcolour2) }
 
+    .email-form{
+        width: 700px;
+    }
+
+    .email-form textarea{
+        width: 52vw;
+    }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
 
 
     /* Tablet Layout */
@@ -689,6 +837,17 @@ p:not(hover) span{
 
     .socials a {
         padding: 8px 15px;
+    }
+
+    .form-group input{
+        width: 205px;
+    }
+    .email-form{
+        width: 450px;
+    }
+
+    .email-form textarea{
+        width: 100vw;
     }
 
 
@@ -780,5 +939,28 @@ p:not(hover) span{
         width: 300px;
         font-size: 28px;
     }
+
+    .tools{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+
+
+    .form-group input{
+        width: 115px;
+    }
+    .email-form{
+        width: 300px;
+    }
+
+    .email-form textarea{
+        width: 100vw;
+    }
+
 }
 }
