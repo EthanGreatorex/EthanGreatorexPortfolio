@@ -7,8 +7,8 @@
     --fgcolour: #ffffff;
     --paragraphcolour: #ffffff;
     --headercolour: #ffffff;
-    --accentcolour: #ae6cff;
-    --accentcolour2: rgb(108, 3, 255);   
+    --accentcolour: #ff8656;
+    --accentcolour2: rgb(158, 86, 230);   
     --sidebarbg: #1a1a1a;
     --buttonprimarybg: #303135;
     --buttonprimaryhoverbg: #ffffff;
@@ -51,50 +51,53 @@ body{
 }
 
 
+.wallpaper{
+    background-color: var(--bgcolour);
+    color: var(--fgcolour);
+    background-image: radial-gradient(circle, var(--wallpapersecondary) 2px, rgba(0, 0, 0, 0) 1px);
+    background-size: 30px 30px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+}
+  
+  
+
 h1{
     color: var(--accentcolour);
 }
 
 
-.video-background{
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    z-index: -999;
-    height: 100vh;
-    width: 100vw;
-
-}
 
 .profile-picture{
-    -webkit-box-shadow:0px 0px 105px 36px rgba(89,0,255,0.9);
-    -moz-box-shadow: 0px 0px 105px 36px rgba(89,0,255,0.9);
-    box-shadow: 0px 0px 105px 36px rgba(89,0,255,0.9);
+    -webkit-box-shadow:0px 0px 105px 36px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow:0px 0px 105px 36px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
     z-index: 99999;
     position: absolute;
-    height: 400px;
+    height: auto;
     top: 35%;
     left: 70%;
     transform: translate(-50%,-50%);
     border: 3px solid #0000;
     border-radius: 50%;
 
-    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
+    background: linear-gradient(#2d180a, #1d0e07) padding-box, linear-gradient(
         var(--angle),
-        rgba(118,0,255,1),
-        rgba(46,19,103,1)
+        rgb(194, 118, 31),
+        rgb(110, 50, 166)
       ) border-box;
 
     animation: 3s rotate linear infinite;
 }
 
-.profile-picture img{
-    width: 400px;
-    height: auto;
-    border-radius: 50%;
+.profile-image{
+   border-radius: 50%;
+   width: 400px;
+   height: 400px;
 }
-
-
 
 a{
     text-decoration: none;
@@ -239,7 +242,7 @@ p:not(hover) span{
 
 .socials a{
     background: rgb(118,0,255);
-    background: linear-gradient(90deg, rgba(118,0,255,1) 4%, rgba(46,19,103,1) 100%);
+    background: linear-gradient(90deg, rgb(216, 131, 40) 4%, rgba(46,19,103,1) 100%);
     padding: 10px 20px 10px 20px;
     border-radius: 100px;
     /* display: flex; */
@@ -254,9 +257,9 @@ p:not(hover) span{
 
 
 .socials a:hover{
-    -webkit-box-shadow:0px 0px 145px 32px rgba(89,0,255,0.74);
-    -moz-box-shadow: 0px 0px 145px 32px rgba(89,0,255,0.74);
-    box-shadow: 0px 0px 145px 32px rgba(89,0,255,0.74);
+    -webkit-box-shadow:0px 0px 105px 36px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
 }
 
 .socials a i{
@@ -328,9 +331,9 @@ p:not(hover) span{
 }
 
 .timeLineIndicator{
-    -webkit-box-shadow:0px 0px 145px 32px rgba(89,0,255,0.74);
-    -moz-box-shadow: 0px 0px 145px 32px rgba(89,0,255,0.74);
-    box-shadow: 0px 0px 145px 32px rgba(89,0,255,0.74);
+    -webkit-box-shadow:0px 0px 105px 36px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 00px 0px 105px 36px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
     background: none;
     width: 2px;
     height: 1700px;
@@ -369,9 +372,9 @@ p:not(hover) span{
 }
 
 .widget {
-    -webkit-box-shadow:0px 0px 80px 0px rgba(89,0,255,0.4);
-    -moz-box-shadow: 0px 0px 80px 0px rgba(89,0,255,0.4);
-    box-shadow: 0px 0px 80px 0px rgba(89,0,255,0.4);
+    -webkit-box-shadow:0px 0px 105px 36px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
     font-size: 14px;
     text-align: center;
     border-radius: 10%;
@@ -385,10 +388,10 @@ p:not(hover) span{
     border: 4px solid #0000;
     border-radius: 12px;
 
-    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
+    background: linear-gradient(#b76228, #652b87) padding-box, linear-gradient(
         var(--angle),
-        rgba(118,0,255,1),
-        rgba(46,19,103,1)
+        rgb(194, 118, 31),
+        rgb(110, 50, 166)
       ) border-box;
 
     animation: 3s rotate linear infinite;
@@ -404,6 +407,7 @@ p:not(hover) span{
 
 .tools i{
     margin-bottom: 15px;
+    color: var(--accentcolour1);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -412,118 +416,13 @@ p:not(hover) span{
     border: 2px solid #0000;
     border-radius: 12px;
 
-    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
+    background: linear-gradient(#2d180a, #1d0e07) padding-box, linear-gradient(
         var(--angle),
-        rgba(118,0,255,1),
-        rgba(46,19,103,1)
+        rgb(194, 118, 31),
+        rgb(110, 50, 166)
       ) border-box;
 
     animation: 3s rotate linear infinite;
-}
-
-.email-form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    width: 1000px;
-    margin-top: 150px;
-}
-
-.email-form form{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.col{
-    margin-bottom: 12px;
-}
-
-.email-form  input{
-    font-size: 17px;
-    height: 3vh;
-    color: white;
-    border: 2px solid #0000;
-    border-radius: 8px;
-
-    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
-        var(--angle),
-        rgba(118,0,255,1),
-        rgba(46,19,103,1)
-      ) border-box;
-
-    animation: 3s rotate linear infinite;
-}
-
-.email-form  input::placeholder{
-    color: white;
-}
-
-.email-form  input:active{
-    color: white;
-    border: 2px solid #0000;
-    border-radius: 8px;
-
-    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
-        var(--angle),
-        rgba(118,0,255,1),
-        rgba(46,19,103,1)
-      ) border-box;
-
-    animation: 3s rotate linear infinite;
-}
-
-.email-form  button{
-    height: 4vh;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 17px;
-    color: white;
-    border: 2px solid #0000;
-    border-radius: 8px;
-
-    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
-        var(--angle),
-        rgba(118,0,255,1),
-        rgba(46,19,103,1)
-      ) border-box;
-
-    animation: 3s rotate linear infinite;
-}
-
-.email-form  textarea{
-    font-size: 17px;
-    width: 25vw;
-    color: white;
-    border: 2px solid #0000;
-    border-radius: 8px;
-
-    background: linear-gradient(#260977, #1f0251) padding-box, linear-gradient(
-        var(--angle),
-        rgba(118,0,255,1),
-        rgba(46,19,103,1)
-      ) border-box;
-
-    animation: 3s rotate linear infinite;
-}
-
-.form-group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.input-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 27px;
-
-}
-
-.input-row .col {
-    flex: 1; 
 }
 
 
@@ -551,9 +450,9 @@ p:not(hover) span{
 }
 
 .widget:hover {
-    -webkit-box-shadow:0px 0px 145px 32px rgba(89,0,255,0.74);
-    -moz-box-shadow: 0px 0px 145px 32px rgba(89,0,255,0.74);
-    box-shadow: 0px 0px 145px 32px rgba(89,0,255,0.74);
+    -webkit-box-shadow:0px 0px 105px 36px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
     transition: all 0.3s ease;
 }
 
@@ -561,9 +460,7 @@ p:not(hover) span{
     color: var(--paragraphcolour);
 }
 
-.widget:hover .languages-involved i{
-    color: var(--accentcolour);
-}
+
 
 .widget h2 {
     margin-top: 10px;
@@ -579,7 +476,7 @@ p:not(hover) span{
 .widget .languages-involved i {
     margin-bottom: 30px;
     font-size: 25px;
-    color: var(--accentcolour2);
+    color: var(--accentcolour);
     flex-shrink: 0;
 }
 
@@ -596,15 +493,27 @@ p:not(hover) span{
     display: flex;
     color: var(--accentcolour);
     justify-content: center;
+    
     font-size: 20px;
 }
 
+
 .tools{
+    
     color: var(--accentcolour);
 }
 
+.tools i{
+    background: linear-gradient(#b76228, #652b87) padding-box, linear-gradient(
+        var(--angle),
+        rgb(194, 118, 31),
+        rgb(110, 50, 166)
+      ) border-box;
+      color: white
+}
+
 .languages{
-    color: var(--accentcolour2);
+    color: white;
     margin-bottom: 100px;
 }
 
