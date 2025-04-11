@@ -336,7 +336,7 @@ p:not(hover) span{
     box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
     background: none;
     width: 2px;
-    height: 1700px;
+    height: 2050px;
     background: -webkit-linear-gradient(--accentcolour2,--headercolour);
     background: linear-gradient(var(--accentcolour), var(--accentcolour2));
     position: absolute;
@@ -358,6 +358,7 @@ p:not(hover) span{
 .point-3 { top: 770px; }
 .point-4 { top: 1160px; }
 .point-5 { top: 1700px; background: var(--accentcolour2) }
+.point-6 { top: 2050px; background: var(--accentcolour2) }
 
 
 
@@ -602,36 +603,12 @@ p:not(hover) span{
         padding: 8px 15px;
     }
 
-    .email-form textarea{
-        width: 36vw;
-    }
+
 }
 
-@media (max-width : 1200px){
-    .form-group input{
-        width: 199px;
-    }
-    .email-form{
-        width: 1000px;
-    }
 
-    .email-form textarea{
-        width: 46w;
-    }
-}
 
-@media (max-width : 1050px){
-    .form-group input{
-        width: 199px;
-    }
-    .email-form{
-        width: 800px;
-    }
 
-    .email-form textarea{
-        width: 46w;
-    }
-}
 
 @media (max-width: 900px){
     
@@ -641,7 +618,7 @@ p:not(hover) span{
 
     .timeLineIndicator{
         margin-left: 230px;
-        height: 1680px;
+        height: 2050px;
     }
 
     .point-1 { top: 0px; background: var(--accentcolour) }
@@ -650,13 +627,9 @@ p:not(hover) span{
     .point-4 { top: 1160px; }
     .point-5 { top: 1680px; background: var(--accentcolour2) }
 
-    .email-form{
-        width: 700px;
-    }
 
-    .email-form textarea{
-        width: 52vw;
-    }
+
+
 }
 
 @media (max-width: 770px) {
@@ -720,7 +693,7 @@ p:not(hover) span{
 
     .timeLineIndicator{
         margin-left: 230px;
-        height: 1730px;
+        height: 2050px;
     }
 
     .point-1 { top: 0px; background: var(--accentcolour) }
@@ -751,13 +724,6 @@ p:not(hover) span{
     .form-group input{
         width: 205px;
     }
-    .email-form{
-        width: 450px;
-    }
-
-    .email-form textarea{
-        width: 100vw;
-    }
 
 
 @media (max-width: 500px) {
@@ -772,7 +738,7 @@ p:not(hover) span{
 
     .center .aboutme{
         width: 320px;
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 10px;
     }
     .profile-picture {
@@ -796,6 +762,7 @@ p:not(hover) span{
         z-index: 999;
         margin-bottom: 50px;
     }
+
     .center h3 span{
         font-size: 37px;
         z-index: 999;
@@ -816,7 +783,7 @@ p:not(hover) span{
 
     .timeLineIndicator{
         margin-left: 230px;
-        height: 1730px;
+        height: 2050px;
     }
 
     .point-1 { top: 0px; background: var(--accentcolour) }
@@ -863,13 +830,7 @@ p:not(hover) span{
     .form-group input{
         width: 115px;
     }
-    .email-form{
-        width: 300px;
-    }
 
-    .email-form textarea{
-        width: 100vw;
-    }
 
 }
 }
