@@ -383,6 +383,8 @@ p:not(hover) span{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    cursor: pointer;
     
     border: 4px solid #0000;
     border-radius: 12px;
