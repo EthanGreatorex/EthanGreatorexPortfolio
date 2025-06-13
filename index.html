@@ -2,54 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Explore Ethan Greatorex porfolio showcasing projects in Python, Javascript and more. Discover his journey to becoming a full-stack developer.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎵Ethan Greatorex☕ | Portfolio</title>
-    <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f680.svg">
+    <title>Ethan Greatorex | Home</title>
+
     <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
-    rel='stylesheet'>   
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
-<body class="dark-mode">
-
+<body>
+    
     <div class="wallpaper"></div>
-
     <div class="profile-picture">
-        <img src="images/2025-profile-picture.png" alt="ethan-greatorex-profile-picture" class="profile-image">
+        <img src="images/2025-profile-picture.png" alt="profile-picture">
     </div>
-
-    <div class="center">
-        <h3 class="name-title">
-            <span>🎵</span>
-            <span>H</span>
-            <span>e</span>
-            <span>y</span>
-            <span>,</span>
+    <div class="hero">
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#timeline">About Me</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#projects">My Projects</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>🎵Hey there!<br> I'm<span> Ethan Greatorex☕</span></h1>
             <br>
-            <span>I</span>
-            <span>'</span>
-            <span>m</span>
-            <br>
-            <span>E</span>
-            <span>t</span>
-            <span>h</span>
-            <span>a</span>
-            <span>n</span>
-            <span>☕</span>
-        </h3>
-        <h2 class="current-position"> Student Learning Programming<br><br></h2>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/ethan-greatorex-240983327/"><i class="bx bxl-linkedin" target="_blank"> <span>LinkedIn</span></i></a>
-            <a href="https://github.com/EthanGreatorex/" target="_blank"><i class="bx bxl-github"> <span>GitHub</span></i></a>
-        </div>
-        <div class="aboutme">
-            <p>I'm currently starting my <span>journey</span> to becoming a full-stack developer and I am eager to <span>increase</span> my <span>practical</span> skills and <span>knowledge</span> inside the work environment.<br><br>Some of the things I <span>enjoy</span> other than coding are listening to <span>music</span>,<span> running</span> and watching <span>movies</span>!</p>
-        </div>
+            <p>I'm on my <span>journey</span> to becoming a <span>full-stack</span> developer and I'm <span>eager</span> to increase my <span>skills</span> and <span>knowledge</span> inside the <span>work</span> environment! <br><br>Some of the things I <span>enjoy</span> other than coding are listening to <span>music</span>, <span>running</span> and watching <span>movies</span>!</p>
+            <div class="contact-info">
+                <a onclick="copyEmail()" class="btn" id="copy-email-button">Copy Email</a>
+                <a href="https://github.com/EthanGreatorex/" target="_blank" class="btn"><i class="bx bxl-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/ethan-greatorex-240983327/" target="_blank" class="btn"><i class="bx bxl-linkedin" target="_blank"></i> LinkedIn</a>
+            </div>
 
-
-        <h1><br><br>My Timeline</h1>
-        
-        <div class="timeline">
+    </div>
+   <div class="center">
+        <div class="timeline" id="timeline">
 
             <div class="timeLineIndicator">
             </div>
@@ -88,13 +81,48 @@
             <div class="time-info right-info">
                 <p class="timeline-date">2025</p>
                 <i class="bx bx-code"></i>
-                <p><span>Finishing</span> my <span>first year</span> of the T-Level course and I am <span>excited</span> to start a <span>placement</span> at <span>Bloc Digital</span> in September</p>
+                <p><span>Finishing</span> my <span>first year</span> of the T-Level course and I am <span>excited</span> to start a <span>placement</span> at <span>Bloc Digital</span> in July</p>
             </div>
         </div>
-        
-        <h1><br><br><br><br>Projects<br><br></h1>
-        
-        <div class="project-list">
+    </div>
+
+    <section id="qualifications">
+        <div class="table">
+            <h2>My <span>Qualifications</span></h2>
+            <div class="qualifications-grid">
+                <div class="qualification-card">
+                    <h3>A-Level Computer Science</h3>
+                    <p><strong>Grade:</strong> B</p>
+                </div>
+                <div class="qualification-card">
+                    <h3>IGCSE Computer Science</h3>
+                    <p><strong>Grade:</strong> 7</p>
+                </div>
+                <div class="qualification-card">
+                    <h3>IGCSE ICT</h3>
+                    <p><strong>Grade:</strong> 8</p>
+                </div>
+                <div class="qualification-card">
+                    <h3>IGCSE Mathematics</h3>
+                    <p><strong>Grade:</strong> 8</p>
+                </div>
+                <div class="qualification-card">
+                    <h3>IGCSE English Language</h3>
+                    <p><strong>Grade:</strong> 9</p>
+                </div>
+                <div class="qualification-card">
+                    <h3>GCSE Statistics</h3>
+                    <p><strong>Grade:</strong> 7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="projects">
+        <div class="center">
+            <h2 class="projectSectionTitle">My <span>Projects</span></h2>
+            <div class="project-list">
 
             <div class="widget" onclick="window.open('https://github.com/EthanGreatorex/AIMovieFinder', '_blank')">
                 <h2>AI Movie Finder</h3>
@@ -193,15 +221,6 @@
                     <i class="bx bxl-python"></i>
                 </div>
             </div>
-            <div class="widget" onclick="window.open('https://ethan-greatorex-youtube-to-transcript.streamlit.app', '_blank')">
-                <h2>Youtube to Transcript</h3>
-                <div class="widget-image">
-                    <img src="images/yt-transcript.png" alt="">
-                </div>
-                <div class="languages-involved">
-                    <i class="bx bxl-python"></i>
-                </div>
-            </div>
             <div class="widget" onclick="window.open('https://ethan-greatorex-qr-code-gen.streamlit.app/', '_blank')">
                 <h2>QrCode Generator</h3>
                 <div class="widget-image">
@@ -232,23 +251,9 @@
                 </div>
             </div>
         </div>
-
-        <h1 class="tools-languages-title"><br><br><br>Tools & Languages</h1>
-        <div class="tool-language-list">
-            <div class="tools">
-                <i class="bx bxl-visual-studio"> <span>Visual Studio</span></i>
-                <i class="bx bxl-windows"> <span>Windows 11</span></i>
-                <i class="bx bxl-github"> <span>GitHub</span></i>
-                <i class="bx bxl-python"> <span>Python</span></i>
-                <i class="bx bxl-javascript"> <span>JavaScript</span></i>
-                <i class="bx bxl-css3"> <span>CSS</span></i>
-                <i class="bx bxl-html5"> <span>HTML</span></i>
-            </div>
         </div>
+    </section>
         
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
