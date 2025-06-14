@@ -52,18 +52,37 @@ body{
     background: linear-gradient(90deg,  rgba(0, 0, 0, 1) 1%, rgba(28, 28, 28, 1) 52%, rgba(0, 0, 0, 1) 100%);
 }
 
-.profile-picture{
-    z-index: 777;
-    width: 60%;
-    height: 30%;
-    position: absolute;
-    top: 30%;
-    left: 80%;
-    transform: translate(-50%, -50%);
+.hero-name{
+    background: linear-gradient(rgb(255, 141, 10),rgb(148, 40, 250));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.profile-picture img{
-    width: 50%;
+
+.profile-picture{
+    z-index: 7777;
+    position: absolute;
+    height: auto;
+    top: 35%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    border: 4px solid #0000;
+    border-radius: 50%;
+
+    background: linear-gradient(#2d180a, #1d0e07) padding-box, linear-gradient(
+        var(--angle),
+        rgb(234, 132, 15),
+        rgb(138, 39, 231)
+      ) border-box;
+
+    animation: 3s rotate linear infinite;
+}
+
+.profile-image{
+   border-radius: 50%;
+   width: 400px;
+   height: 400px;
 }
 
 nav{
@@ -273,9 +292,14 @@ span{
 
 #qualifications {
     padding: 50px 20px;
+    margin: 0;
     background-color: #00000026;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #qualifications h2 {
@@ -432,8 +456,15 @@ span{
     }
 
     .profile-picture{
-        left: 90%;
+        height: 200px;
+        left: 80%;
     }
+
+    .profile-image{
+        width: 193px;
+        height: 193px;
+    }
+
 
     .hero-content{
         width: 50%;
@@ -451,11 +482,11 @@ span{
 
     .hero-content{
         width: 80%;
-        margin-top: 40%;
+        margin-top: 50%;
     }
     .profile-picture{
-        top: 22%;
-        left: 30%;
+        top: 28%;
+        left: 25%;
     }
 
     .hero-content h1{
@@ -481,16 +512,16 @@ span{
 
     
 
-    #qualifications {
-        margin-left: 10%;
-    }
-
-    #projects {
-        margin-left: 10%;
-    }
-
     .menu-toggle {
         display: flex;
+    }
+
+    .profile-picture{
+        top: 26%;
+    }
+
+    .hero-content{
+        margin-top: 50%;
     }
 
 
@@ -518,23 +549,23 @@ span{
         padding: 10px 0;
     }
 
-@media(max-width: 705px){
 
-
-}
-
-@media(max-width: 605px){
+@media(max-width: 620px){
 
 
     .hero-content h1{
         font-size: 2.5rem;
     }
 
+    .profile-picture{
+        top: 19%;
+    }
+
 
 }
 
 
-@media (max-width: 560px) {
+@media (max-width: 570px) {
 
     .hero-content h1{
         font-size: 2rem;
@@ -542,7 +573,11 @@ span{
 
     .hero-content{
         width: 90%;
-        margin-top: 45%;
+        margin-top: 55%;
+    }
+
+    .profile-picture{
+        top: 19%;
     }
 
 
@@ -568,11 +603,11 @@ span{
 
     .hero-content{
         width: 100%;
-        margin-top: 50%;
+        margin-top: 60%;
     }
 
     .profile-picture{
-        top: 23%;
+        top: 26%;
     }
 
     .right-info{
@@ -596,7 +631,7 @@ span{
 
     .hero-content{
         width: 90%;
-        margin-top: 55%;
+        margin-top: 70%;
     }
 
 
@@ -612,6 +647,19 @@ span{
     .btn{
         padding: 2px 5px;
     }
+
+    .hero-content{
+        margin-top: 100%;
+    }
 }
 
 
+@media (max-height: 470px){
+    .profile-picture{
+        top: 48%;
+    }
+
+    .hero-content{
+        margin-top: 37%;
+    }
+}
