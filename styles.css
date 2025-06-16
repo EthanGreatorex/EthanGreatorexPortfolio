@@ -508,6 +508,12 @@ span{
 
 }
 
+@media (max-width:1200px){
+    .profile-picture{
+        left: 80%;
+    }
+}
+
 @media (max-width: 1060px) {
 
     .center {
