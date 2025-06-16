@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -52,13 +54,63 @@ body{
     background: linear-gradient(90deg,  rgba(0, 0, 0, 1) 1%, rgba(28, 28, 28, 1) 52%, rgba(0, 0, 0, 1) 100%);
 }
 
-.hero-name{
-    background: linear-gradient(rgb(255, 141, 10),rgb(148, 40, 250));
+.gradient-text {
+    background: linear-gradient(rgb(255, 136, 0),rgb(135, 6, 255));
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.name-title{
+    /* Prevents the text from wrapping,therefore keeping the set style I want */
+    white-space: nowrap;
+}
+
+.name-title span{
+    display: inline-block;
+    font-size: 4.5rem;
+    animation: wave 2.7s ease-in-out infinite
+}
+
+.name-title span:nth-child(1){
+    animation-delay: 0s;;
+}
+.name-title span:nth-child(2){
+    animation-delay: 0.2s;;
+}
+.name-title span:nth-child(3){
+    animation-delay: 0.4s;;
+}
+.name-title span:nth-child(4){
+    animation-delay: 0.6s;;
+}
+.name-title span:nth-child(5){
+    animation-delay: 0.8s;;
+}
+.name-title span:nth-child(6){
+    animation-delay: 0.10s;;
+}
+.name-title span:nth-child(7){
+    animation-delay: 0.12s;;
+}
+.name-title span:nth-child(8){
+    animation-delay: 0.14s;;
+}
+.name-title span:nth-child(9){
+    animation-delay: 0.16s;;
+}
+.name-title span:nth-child(10){
+    animation-delay: 0.18s;;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
 
 .profile-picture{
     z-index: 7777;
@@ -278,7 +330,7 @@ span{
     transform: translate(-50%, -50%);
     width: 2px;
     height: 100%;
-    background: linear-gradient(rgb(255, 128, 0), rgb(255, 150, 44));
+    background: linear-gradient(rgb(255, 128, 0), rgb(145, 0, 255));
     z-index: 1;
 }
 
@@ -327,6 +379,17 @@ span{
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    border: 2px solid #0000;
+    border-radius: 12px;
+
+    background: linear-gradient(#000000, #161616) padding-box, linear-gradient(
+        var(--angle),
+        rgb(221, 123, 10),
+        rgb(114, 37, 187)
+      ) border-box;
+
+    animation: 3s rotate linear infinite;
 }
 
 .qualification-card h3 {
@@ -364,9 +427,6 @@ span{
 .widget {
     margin-left: auto;
     margin-right: auto;
-    -webkit-box-shadow:0px 0px 105px 36px rgba(0, 0, 0, 0.9);
-    -moz-box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
-    box-shadow: 0px 0px 105px 36px rgba(0, 0, 0, 0.9);
     font-size: 14px;
     text-align: center;
     border-radius: 10%;
@@ -456,13 +516,13 @@ span{
     }
 
     .profile-picture{
-        height: 200px;
+        height: 250px;
         left: 80%;
     }
 
     .profile-image{
-        width: 193px;
-        height: 193px;
+        width: 243px;
+        height: 243px;
     }
 
 
@@ -510,7 +570,9 @@ span{
 
 @media (max-width: 770px) {
 
-    
+    .name-title span{
+        font-size: 2.5rem;
+    }
 
     .menu-toggle {
         display: flex;
@@ -561,6 +623,15 @@ span{
         top: 19%;
     }
 
+    .profile-picture{
+        height: 200px;
+    }
+
+    .profile-image{
+        width: 193px;
+        height: 193px;
+    }
+
 
 }
 
@@ -582,12 +653,12 @@ span{
 
 
     .right-info{
-        width: 70%;
-        padding-left: 75%;
+        width: 80%;
+        padding-left: 40%;
     }
     .left-info{
         width: 70%;
-        padding-right: 75%;
+        padding-right: 15%;
         margin-left: -70px;
     }
 
@@ -644,6 +715,10 @@ span{
 
 
 @media (max-width: 350px){
+
+    .name-title span{
+        font-size: 2rem;
+    }
     .btn{
         padding: 2px 5px;
     }
@@ -655,6 +730,10 @@ span{
 
 
 @media (max-height: 470px){
+
+    .name-title span{
+        font-size: 2.3rem;
+    }
     .profile-picture{
         top: 48%;
     }
@@ -663,3 +742,4 @@ span{
         margin-top: 37%;
     }
 }
+
